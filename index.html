@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ChatGPT UI</title>
+</head>
+<body>
+    <div class="container">
+
+        <button id="hideButtonTop">Show</button>
+        <div class="left-pane" id="leftPane">
+            <div class="header">
+                <button type="text" placeholder="New chat" class="new-chat-input" id="add-chat-button">NewChat</button>
+                <button class="hide-pane-icon" id="hideButton">Hide</button>
+            </div>
+            <div class="bottom">
+                <div class="upgrade-section">
+                    <div class="profile-icon"></div>
+                    <div class="upgrade-text">Upgrade to Plus</div>
+                </div>
+                <div class="profile-section">
+                    <div class="profile"></div>
+                    <div class="username">Mansi</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="top-buttons">
+                <button class="floating-button" id="button1">⚡ GPT-3.5</button>
+                <button class="floating-button" id="button2" style="background-color: black;">✨ GPT-4 🔒</button>
+            </div>
+            <div class="message-area" id="message-area">
+                <!-- Messages will be displayed here -->
+            </div>
+            <div class="boxes-container">
+                <!-- Add four boxes below the message area -->
+                <div class="column-left">
+                    <div class="box">Come up with the concepts</div>
+                    <div class="box">show me a code snippet</div>
+                </div>
+                <div class="column-right">
+                    <div class="box">mark up a story</div>
+                    <div class="box">brainstorm incentives</div>
+                </div>
+            </div>
+            <div class="bottom-input">
+                <input type="text" placeholder="Type a message..." class="message-input" id="message-input">
+                <button class="send-button" id="send-button">➡️</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
